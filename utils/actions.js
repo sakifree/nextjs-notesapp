@@ -13,4 +13,4 @@ export const createNote = async (newNote) => await Note.create(newNote)
 export const updateNote = async (id, updatedNote) => await Note.findByIdAndUpdate(id, updatedNote, {new: true})
 
 // delete a note
-export const deleteNote = async (id) => await Note.findByIdAndDelete(id)
+export const destroyNote = async (id) => await Note.findByIdAndDelete(id)
