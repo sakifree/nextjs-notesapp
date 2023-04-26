@@ -4,6 +4,8 @@ import { getNote, updateNote, destroyNote } from "@/utils/actions";
 export default async function(req, res){
 
     const id = req.query.id
+    console.log(id)
+    console.log(req.method)
 
     try {
         switch(req.method){
@@ -13,8 +15,8 @@ export default async function(req, res){
             case "PUT":
                 res.json(await updateNote(id, req.body))
                 break
-            case "DELETE":
-                res.json(await destroyNote(id, req.body))
+            case "POST" :
+                res.json(await destroyNote(id))
                 break
             default:
                 res.status(404).send("NO RESPONSE FOR THAT METHOD")
