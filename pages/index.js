@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -10,6 +11,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h1>Hello World</h1>
+      <Link href="/new">
+        <h2><button>View Notes</button></h2>
+      </Link>
+      <Link href="/new">
+        <h2><button>New Note</button></h2>
+      </Link>
     </>
   )
 }
