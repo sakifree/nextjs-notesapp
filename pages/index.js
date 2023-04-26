@@ -10,8 +10,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <h1>Hello World</h1>
-      <Link href="/new">
+      <h1>Notebook</h1>
+      <Link href="/notebook">
         <h2><button>View Notes</button></h2>
       </Link>
       <Link href="/new">
