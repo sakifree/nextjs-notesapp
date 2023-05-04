@@ -18,8 +18,6 @@ const Index = ({notes}) => {
     )
 }
 
-export default Index
-
 export async function getServerSideProps(context){
     const notes = JSON.parse(JSON.stringify(await getNotes()))
     //console.log(notes)
@@ -30,3 +28,5 @@ export async function getServerSideProps(context){
         }
     }
 }
+
+export default Index
