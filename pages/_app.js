@@ -8,6 +8,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>Notes App</title>
       </Head>
+      <Nav />
       <Component {...pageProps} />
     </>
   )
